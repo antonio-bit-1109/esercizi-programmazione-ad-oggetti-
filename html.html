@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>pratica object constructor</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <form id="form" class="d-flex flex-column align-items-center m-5">
+                        <div class="fs-2 text-primary">descrivi il tuo pet</div>
+                        <div class="mb-3">
+                            <label for="nome-pet" class="form-label">Pet name </label>
+                            <input
+                                id="nome-pet"
+                                type="text"
+                                class="form-control"
+                                aria-describedby="emailHelp"
+                                placeholder="inserisci nome del pet..."
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="padrone-pet" class="form-label">padrone del Pet </label>
+                            <input id="padrone-pet" type="text" class="form-control" placeholder="chi è il padrone?" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="specie-pet" class="form-label"> specie pet </label>
+                            <input id="specie-pet" type="text" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="temperamento-pet" class="form-label">temperamento</label>
+                            <input id="temperamento-pet" type="text" class="form-control" />
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary">crea</button>
+                            <button type="button" class="btn btn-success">mostra animali salvati</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-success">
+                <hr />
+            </div>
+
+            <div id="cardRow" class="row"></div>
+        </section>
+
+        <script src="./assets/script/bootstrap.js"></script>
+        <script src="./assets/script/script.js"></script>
+        <script src="./assets/script/form-pet.js"></script>
+    </body>
+</html>
